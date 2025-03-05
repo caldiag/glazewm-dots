@@ -1,19 +1,10 @@
-/**
- * Import the Nerdfonts icon font.
- * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
- */
 @import 'https://www.nerdfonts.com/assets/css/webfont.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..700;1,100..700&display=swap');
-
-i {
-  margin-right: 7px;
-}
 
 body {
   color: white;
   font-size: 12px;
   overflow: hidden;
-  font-family: Inter;
+  font-family: sans-serif;
 }
 
 div,
@@ -27,6 +18,7 @@ html,
 body,
 #root {
   height: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .app {
@@ -43,6 +35,7 @@ body,
 .right {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 .center {
@@ -53,24 +46,27 @@ body,
   justify-self: end;
 }
 
-.logo,
-.binding-mode,
-.tiling-direction,
-.paused-button,
-.network,
-.memory,
-.cpu,
-.battery {
-  margin-right: 10px;
-}
-
 .network i {
   font-size: 13px;
 }
 
-.battery i {
+.battery {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.battery i:nth-child(1) {
   font-size: 16px;
+  padding: 0px;
+  margin: 0px;
   margin-left: 5px;
+}
+
+.nf-md-lightning_bolt {
+  font-size: 10px !important;
+  margin: 0px;
 }
 
 .tiling-direction {
@@ -97,8 +93,7 @@ body,
 
   &.focused,
   &:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: black;
+    background: rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -131,4 +126,12 @@ body,
   font-size: 7px;
   left: -8px;
   top: 3px;
+}
+
+logo {
+  font-size: 30px;
+}
+
+i {
+  margin: 0px;
 }

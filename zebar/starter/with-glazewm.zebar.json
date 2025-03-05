@@ -3,7 +3,7 @@
   "htmlPath": "./with-glazewm.html",
   "zOrder": "normal",
   "shownInTaskbar": false,
-  "focused": false,
+  "focused": true,
   "resizable": false,
   "transparent": true,
   "caching": {
@@ -25,9 +25,9 @@
         "type": "all"
       },
       "dockToEdge": {
-        "enabled": false,
+        "enabled": true,
         "edge": null,
-        "windowMargin": "70px"
+        "windowMargin": "0px"
       }
     }
   ]
