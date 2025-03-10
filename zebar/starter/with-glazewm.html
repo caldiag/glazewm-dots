@@ -78,6 +78,7 @@
       }
 
       function getAudioIcon(audioOutput) {
+        if (!audioOutput.defaultPlaybackDevice) return <i className="nf nf-fa-volume_xmark"></i>
         if (audioOutput.defaultPlaybackDevice.volume > 80)
           return <i className="nf nf-fa-volume_high"></i>;
         if (audioOutput.defaultPlaybackDevice.volume > 40)
